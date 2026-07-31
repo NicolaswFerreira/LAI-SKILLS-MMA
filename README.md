@@ -1,79 +1,214 @@
-# LAI Skills MMA
+# LAI Skills
 
-Projeto de pesquisa e desenvolvimento voltado ao uso de Inteligência Artificial como ferramenta de apoio à análise de pedidos e recursos da Lei de Acesso à Informação (LAI).
+## Inteligência Artificial aplicada à análise de recursos administrativos da Lei de Acesso à Informação
 
-O projeto surgiu a partir da necessidade de organizar análises que, muitas vezes, exigem consulta simultânea à legislação, estruturas regimentais, competências administrativas, precedentes e orientações da Controladoria-Geral da União. Em vez de utilizar a IA apenas para responder perguntas, a proposta foi construir uma base de conhecimento capaz de apoiar esse processo de forma estruturada e consistente.
-
-O LAI Skills não substitui a análise humana nem produz decisões administrativas. Seu objetivo é auxiliar a organização das informações, reduzir erros recorrentes e padronizar etapas da análise, sempre com revisão por servidor responsável.
+> Projeto de pesquisa, desenvolvimento e gestão do conhecimento voltado ao uso de Inteligência Artificial como ferramenta de apoio à análise de pedidos e recursos da Lei de Acesso à Informação (LAI).
 
 ---
 
-## Objetivos
+# Sobre o projeto
 
-* Organizar uma base de conhecimento sobre a Lei de Acesso à Informação.
-* Estruturar um fluxo de análise para pedidos e recursos.
-* Reduzir erros recorrentes na utilização de IA generativa.
+O **LAI Skills** nasceu a partir de uma necessidade real identificada durante as atividades desenvolvidas na Ouvidoria do Ministério do Meio Ambiente e Mudança do Clima (MMA).
+
+Ao longo da análise de pedidos e recursos da Lei de Acesso à Informação, tornou-se evidente que boa parte do trabalho exigia consultar simultaneamente diferentes fontes de informação, como:
+
+* legislação;
+* decretos;
+* competências administrativas;
+* estruturas regimentais;
+* orientações da Controladoria-Geral da União (CGU);
+* precedentes administrativos;
+* modelos de resposta;
+* documentos internos.
+
+Embora essas informações fossem públicas ou institucionalmente disponíveis, elas encontravam-se distribuídas em diversos documentos, tornando a consulta repetitiva e aumentando o tempo necessário para cada análise.
+
+A partir dessa demanda surgiu a proposta de desenvolver uma base estruturada de conhecimento capaz de organizar essas informações e utilizá-las juntamente com Grandes Modelos de Linguagem (LLMs) como ferramenta de apoio ao processo analítico.
+
+O objetivo nunca foi substituir a análise realizada pelos servidores.
+
+O projeto foi concebido para apoiar a organização das informações, aumentar a consistência das análises, reduzir erros recorrentes e facilitar a elaboração de minutas, mantendo obrigatoriamente a revisão humana em todas as etapas.
+
+---
+
+# Origem do projeto
+
+O desenvolvimento do LAI Skills foi motivado por demandas reais observadas durante o tratamento de pedidos e recursos da Lei de Acesso à Informação na Ouvidoria do MMA.
+
+A iniciativa foi construída de forma incremental, incorporando documentos, matrizes de competência, fluxos administrativos e conhecimentos acumulados durante as análises realizadas no setor.
+
+Com o amadurecimento da metodologia, a estrutura desenvolvida passou a ser utilizada como base para dezenas de espaços de trabalho temáticos (chats especializados), permitindo organizar diferentes áreas do conhecimento relacionadas à LAI.
+
+Atualmente a base já apoia **mais de 40 chats especializados**, utilizados para organizar diferentes conjuntos documentais e fluxos de análise.
+
+Os resultados obtidos também motivaram discussões internas sobre o potencial de evolução da metodologia para futuras soluções institucionais de apoio à gestão do conhecimento.
+
+---
+
+# Objetivos
+
+* Organizar uma base estruturada de conhecimento sobre a Lei de Acesso à Informação.
+* Centralizar legislação, precedentes e documentação administrativa.
+* Estruturar um fluxo padronizado para análise de pedidos e recursos.
 * Apoiar a identificação da unidade administrativa competente.
+* Melhorar a consistência das análises produzidas com apoio de IA.
 * Consolidar boas práticas para elaboração de respostas e minutas.
-* Estudar aplicações de IA na Administração Pública.
+* Pesquisar aplicações de Inteligência Artificial na Administração Pública.
 
 ---
 
-## Como funciona
+# Arquitetura do conhecimento
 
-Cada análise segue uma sequência de etapas:
+A base de conhecimento integra diferentes conjuntos documentais utilizados durante as análises administrativas.
 
-1. Identificação do pedido.
-2. Classificação conforme a LAI.
-3. Verificação de competência administrativa e custódia da informação.
-4. Pesquisa de informações e fundamentos legais.
-5. Consulta a precedentes e orientações aplicáveis.
-6. Elaboração da minuta.
-7. Revisão crítica antes do envio.
+* Legislação
+* Decretos
+* Estruturas Regimentais
+* Competências Administrativas
+* Matrizes de Competência
+* Guias e Manuais da CGU
+* Precedentes Administrativos
+* Casos de estudo
+* Modelos de resposta
+* Fluxos de análise
+* Prompts especializados
+* Documentação técnica
 
-Essa estrutura foi sendo aprimorada conforme novos casos eram analisados e novos padrões de erro eram identificados.
-
----
-
-## Estrutura do repositório
-
-O projeto está organizado em módulos independentes:
-
-* **Documentação** – instruções gerais, metodologia e manuais.
-* **Legislação** – leis, decretos e demais normas utilizadas como referência.
-* **Matrizes de competência** – organização das competências administrativas do MMA, entidades vinculadas e outros órgãos relacionados.
-* **Modelos** – documentos utilizados como base para análises e minutas.
-* **Prompts** – instruções utilizadas para interação com os modelos de IA.
-* **Controle** – planilhas e materiais de apoio ao desenvolvimento do projeto.
+Esses elementos são utilizados em conjunto para fornecer contexto aos modelos de IA durante as análises.
 
 ---
 
-## Tecnologias utilizadas
+# Metodologia
+
+Cada análise segue um fluxo estruturado.
+
+```text
+Recebimento do pedido
+
+        ↓
+
+Identificação da demanda
+
+        ↓
+
+Classificação conforme a LAI
+
+        ↓
+
+Verificação da competência administrativa
+
+        ↓
+
+Consulta à legislação
+
+        ↓
+
+Consulta às matrizes de competência
+
+        ↓
+
+Pesquisa de precedentes
+
+        ↓
+
+Construção da análise
+
+        ↓
+
+Elaboração da minuta
+
+        ↓
+
+Revisão crítica humana
+
+        ↓
+
+Resposta final
+```
+
+---
+
+# Estrutura do repositório
+
+```text
+docs/
+    documentação geral
+
+legislacao/
+    leis, decretos e normas
+
+competencias/
+    matrizes de competência administrativa
+
+prompts/
+    prompts especializados
+
+modelos/
+    modelos de respostas e minutas
+
+controle/
+    planilhas e materiais de apoio
+
+casos/
+    estudos e validação da metodologia
+```
+
+---
+
+# Tecnologias
 
 * ChatGPT
-* NotebookLM
+* Google NotebookLM
 * GitHub
 * Markdown
 * Microsoft Excel
 
 ---
 
-## Situação do projeto
+# Resultados
 
-O projeto permanece em desenvolvimento e recebe atualizações conforme novos estudos, documentos e casos são incorporados à base de conhecimento.
+Entre os principais resultados alcançados pelo projeto destacam-se:
 
-Atualmente os trabalhos concentram-se principalmente em:
-
-* aperfeiçoamento da metodologia de análise;
-* organização da base documental;
-* melhoria dos prompts;
-* atualização das matrizes de competência;
-* ampliação da documentação do projeto.
+* estruturação de uma base integrada de conhecimento sobre a LAI;
+* padronização do fluxo de análise de pedidos e recursos;
+* organização de matrizes de competência administrativa;
+* redução do tempo gasto na localização de informações;
+* apoio à elaboração de análises e minutas;
+* utilização da metodologia em mais de **40 chats especializados**, organizados por tema e finalidade.
 
 ---
 
-## Aviso
+# Situação do projeto
 
-Este repositório possui finalidade educacional e de pesquisa.
+O projeto permanece em desenvolvimento contínuo.
 
-Nenhum documento disponibilizado aqui substitui manifestação oficial de órgãos públicos ou decisão administrativa. Os materiais publicados utilizam apenas informações públicas, documentos autorizados para divulgação ou conteúdos produzidos especificamente para este projeto.
+As atividades atuais concentram-se em:
+
+* expansão da base documental;
+* aperfeiçoamento da metodologia;
+* melhoria dos prompts;
+* organização das matrizes de competência;
+* validação em novos casos;
+* documentação técnica.
+
+---
+
+# Aviso
+
+Este repositório possui finalidade de pesquisa, desenvolvimento e demonstração técnica.
+
+A Inteligência Artificial é utilizada exclusivamente como ferramenta de apoio à análise administrativa.
+
+Nenhuma resposta produzida pelo sistema substitui manifestação oficial da Administração Pública ou decisão administrativa.
+
+Todas as análises devem ser revisadas por servidor responsável antes de qualquer utilização.
+
+---
+
+## Minha principal sugestão
+
+Eu **tiraria completamente a palavra "chatbot" do README**.
+
+Depois de ver a estrutura do projeto, ela diminui o valor do que você fez. O núcleo do LAI Skills não é um chatbot: é uma **plataforma de gestão do conhecimento com apoio de IA**. O chatbot é apenas a interface de interação.
+
+Essa mudança de enquadramento faz o projeto parecer muito mais próximo de iniciativas de transformação digital e governança da informação do que de um simples experimento com IA.
