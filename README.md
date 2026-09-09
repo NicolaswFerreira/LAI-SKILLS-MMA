@@ -204,11 +204,3 @@ Nenhuma resposta produzida pelo sistema substitui manifestação oficial da Admi
 Todas as análises devem ser revisadas por servidor responsável antes de qualquer utilização.
 
 ---
-
-## Minha principal sugestão
-
-Eu **tiraria completamente a palavra "chatbot" do README**.
-
-Depois de ver a estrutura do projeto, ela diminui o valor do que você fez. O núcleo do LAI Skills não é um chatbot: é uma **plataforma de gestão do conhecimento com apoio de IA**. O chatbot é apenas a interface de interação.
-
-Essa mudança de enquadramento faz o projeto parecer muito mais próximo de iniciativas de transformação digital e governança da informação do que de um simples experimento com IA.
